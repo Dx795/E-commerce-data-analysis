@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="shortcut icon" href="../static/img/logo.ico">
+	<link rel="stylesheet" href="../static/css/logincss/style.css" type="text/css">
+	<link rel="stylesheet" href="../static/css/logincss/reset.css" type="text/css">
+	<link rel="stylesheet" href="../static/css/logincss/font.css" type="text/css">
+	<title>登录界面</title>
+</head>
+<body>
+	<div class="login-card-container">
+		<div class="login-card">
+			<!--logo-->
+			<div class="login-card-logo">
+				<img src="/static/img/logo.ico" alt="logo">
+			</div>
+			<!--提示-->
+			<div class="login-card-header">
+				<h1>登 录</h1>
+				<div>欢迎使用电商数据分析平台</div>
+			</div>
+			<!--表单-->
+			<form class="login-card-form" action="/index">
+				<div class="form-item">
+					<span class="form-item-icon material-symbols-rounded" style="padding-top: 5px;">mail</span>
+					<input type="text" placeholder="输入账户..." required autofocus/>
+				</div>
+				<div class="form-item">
+					<span class="form-item-icon material-symbols-rounded" style="padding-top: 5px;">lock</span>
+					<input type="password" placeholder="输入密码..." required/>
+				</div>
+				<div class="form-item-other">
+					<div class="checkbox"></div>
+					<a href="#">忘记密码点击找回密码</a>
+				</div>
+				<button type="submit" ><p style="text-align:center;">登录</p></button>
+			</form>
+			<!--创建账户-->
+			<div class="login-card-footer">
+				没有账户？<a href="#">点此免费创建~</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.outer{
+    position:relative;
+}
+.outer .small-box{
+    position: relative;
+    z-index: 1;
+}
+.outer .small-box .mark{
+    position: absolute;
+    display: block;
+    /* 图片区域 */
+    width: 89%;
+    height: 100%;
+    background-color: #fff;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 10;
+}
+.outer .small-box .float-box{
+    /* 取景区域 */
+    display: none;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #DAEEFC;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    border: 1px solid black;
+
+}
+.outer .big-box{
+    position: absolute;
+    top: 0;
+    left: 175px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    z-index: 1;
+    border: 1px solid black;
+}
+.outer .big-box img{
+    position: absolute;
+    z-index: 5
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>主页</title>
+  <!-- plugins:css -->
+  <!-- 图标 -->
+  <link rel="shortcut icon" href="../static/img/logo.ico">
+  <link rel="stylesheet" href="../static/css/indexcss/tubiao/mdi/css/materialdesignicons.css">
+  <link rel="stylesheet" href="../static/css/indexcss/tubiao/simple-line-icons/css/simple-line-icons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../static/css/indexcss/icheck/skins/all.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../static/css/indexcss/style.css">
+  <!-- endinject -->
+
+</head>
+<body style="overflow:scroll;overflow-y:hidden">
+  <div class="container-scroller" style="height:0px;">
+    <nav class="navbar navbar-primary col-lg-12 col-12 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="#">DX
+          <img src="/static/img/logo.ico" alt="logo" style="height: 50px;width: 50px;margin-bottom: 10px;">
+        </a>
+        <!-- 小箭头按钮点击后主图标的显示 -->
+        <a class="navbar-brand brand-logo-mini" href="#">
+          <img src="/static/img/logo.ico" alt="logo" style="height: 40px;width: 40px;margin-bottom: 10px;">
+        </a>
+      </div>
+      <!-- 头部 -->
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <!-- 小箭头按钮 -->
+        <button class="navbar-toggler navbar-toggler d-none d-lg-block align-self-center mr-2" type="button"
+          data-toggle="minimize">
+          <span class="mdi mdi-chevron-left"></span>
+        </button>
+        <div class="nav-profile">
+          <span>Hi, 沈小龙</span>
+        </div>
+        <!-- 搜索框 -->
+        <form class="form-inline mt-2 mt-md-0 d-none d-lg-block ml-lg-auto">
+          <input class="form-control search" type="text" placeholder="Search">
+        </form>
+        <!-- 左边图标 -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell-outline"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-comment-outline"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 侧边栏 -->
+    <!--menu ends -->
+    <div class="container-fluid page-body-wapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- sidebar starts -->
+        <nav class="sidebar sidebar-fixed sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <!--首页-->
+            <li class="nav-item">
+              <a class="nav-link" href="/index">
+                <i class="icon-speedometer"></i>
+                <span class="menu-title">首页</span>
+              </a>
+            </li>
+            <!--数据统计-->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#tablesSubmenu" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="icon-screen-desktop"></i>
+                    <span class="menu-title">数据统计</span>
+                    <i class="icon-arrow-down"></i>
+                </a>
+                <div class="collapse" id="tablesSubmenu">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/datamodeling">数据建模</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dataPreview">数据预览</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--可视化图表-->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#chartsSubmenu" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="icon-pie-chart"></i>
+                    <span class="menu-title">可视化图表</span>
+                    <i class="icon-arrow-down"></i>
+                </a>
+                <div class="collapse" id="chartsSubmenu">
+                    <ul class="nav flex-column sub-menu">
+                                            <li class="nav-item">
+                            <a class="nav-link" href="/chart_danliang_distribution">账户总单量分布</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chart_shouru_distribution">账户总收入分布</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chart_time_danliang">时间单量分布</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chart_time_shouru">时间收入分布</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chart_goods_best">商品分析情况</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chart_ciyun">热力图分析</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--大屏数据图-->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#mapsSubmenu" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="icon-map"></i>
+                    <span class="menu-title">大屏数据图</span>
+                    <i class="icon-arrow-down"></i>
+                </a>
+                <div class="collapse" id="mapsSubmenu">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/chart_countries_map">世界单量分布图</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+                <!--data rep end-->
+          </ul>
+        </nav>
+
+
+<!--        显示-->
+        <!--menu ends -->
+        <div class="content-wrapper">
+          <h1 class="page-title">主页</h1>
+          <div class="row grid-margin">
+            <div class="col-12 col-lg-6 grid-margin grid-margin-lg-0">
+              <div class="card">
+                <div id="data_chart" class="card-body" style="height:450px;">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row grid-margin">
+                <div class="col-6">
+                  <div class="card card-statistics">
+                    <div class="card-body" style="padding: 50px;">
+                        <p class="text-muted" style="font-size: 18px;">
+                        今日用户数
+                      </p>
+                      <p class="highlight-text" style="margin-top:25px;">
+                        <i class="mdi mdi-account"></i>
+                        {{data_list['用户']}} 人
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card card-statistics">
+                    <div class="card-body" style="padding: 50px;">
+                        <p class="text-muted" style="font-size: 18px;">
+                        今日总出单
+                      </p>
+                      <p class="highlight-text" style="margin-top:25px;">
+                        <i class="mdi mdi-chart-areaspline"></i>
+                        {{data_list['出单']}} 单
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="card card-statistics">
+                    <div class="card-body" style="padding: 50px;">
+                         <p class="text-muted" style="font-size: 18px;">
+                        今日销冠店铺
+                      </p>
+                      <p class="highlight-text" style="margin-top:25px;">
+                          <i class="mdi mdi-trophy"></i>
+                        {{data_list['销冠']}}
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card card-statistics">
+                    <div class="card-body" style="padding: 50px;">
+                         <p class="text-muted" style="font-size: 18px;">
+                        今日总收入
+                      </p>
+                      <p class="highlight-text" style="margin-top:25px;">
+                        <i class="mdi mdi-cash-multiple"></i>
+                        ${{data_list['收入']}}元
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--menu ends -->
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+
+  <!-- plugins:js -->
+    <script src="../static/js/echarts.js"></script>
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../static/js/icheck.min.js"></script>
+  <script src="../static/js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../static/js/off-canvas.js"></script>
+  <script src="../static/js/sidebar-icon.js"></script>
+  <script src="../static/js/hoverable-collapse.js"></script>
+  <script src="../static/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../static/js/chart.js"></script>
+  <script src="../static/js/iCheck.js"></script>
+  <!-- End custom js for this page-->
+
+<script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('data_chart'));
+
+      // 指定图表的配置项和数据
+      var option = {
+          title: {
+            text: '今日出单'
+          },
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+              type: 'cross',
+              label: {
+                backgroundColor: '#6a7985'
+              }
+            }
+          },
+          legend: {
+            data: ['店铺销量']
+          },
+          toolbox: {
+            feature: {
+              saveAsImage: {}
+            }
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: [
+            {
+              type: 'category',
+              boundaryGap: false,
+              data: ("{{data_list['时间']}}".split(","))
+            }
+          ],
+          yAxis: [
+            {
+                interval:1, // 步长
+                min:0, // 起始
+                max:'{{max}}', // 终止
+              type: 'value'
+            }
+          ],
+          series: [
+            {
+              name: '店铺销量',
+              type: 'line',
+              stack: 'Total',
+              areaStyle: {},
+              emphasis: {
+                focus: 'series'
+              },
+              data: (("{{data_list['单量']}}".substring(1,"{{data_list['单量']}}".length-1)).split(",")).map(Number)
+            }
+          ]
+        };
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+</body>
+
+
+
+</html>
